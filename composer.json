@@ -1,6 +1,6 @@
 {
-  "name": "itinerisltd/package-template-wp-muplugin-basic",
-  "description": "Basic WordPress plugin template for Composer",
+  "name": "itinerisltd/stream-connector-redirection",
+  "description": "Redirection plugin connector for Stream to track redirect management",
   "license": "MIT",
   "type": "wordpress-muplugin",
   "authors": [
@@ -16,30 +16,54 @@
       "role": "Developer"
     }
   ],
-  "homepage": "https://github.com/itinerisltd/package-template-wp-muplugin-basic/",
+  "homepage": "https://github.com/itinerisltd/stream-connector-redirection/",
   "support": {
     "email": "dev@itineris.co.uk",
-    "issues": "https://github.com/ItinerisLtd/package-template-wp-muplugin-basic/issues",
-    "source": "https://github.com/ItinerisLtd/package-template-wp-muplugin-basic"
+    "issues": "https://github.com/ItinerisLtd/stream-connector-redirection/issues",
+    "source": "https://github.com/ItinerisLtd/stream-connector-redirection"
   },
+  "repositories": [
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    }
+  ],
   "require": {
     "php": "^8.1"
   },
   "require-dev": {
     "itinerisltd/itineris-wp-coding-standards": "^1.0",
-    "roots/wordpress": "^6.8"
+    "roots/wordpress": "^6.8",
+    "wpackagist-plugin/redirection": "^5.5",
+    "xwp/stream": "^4.0"
   },
   "prefer-stable": true,
   "config": {
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "roots/wordpress-core-installer": true
+      "roots/wordpress-core-installer": true,
+      "composer/installers": true
     },
     "optimize-autoloader": true,
     "preferred-install": "dist",
     "sort-packages": true
   },
   "extra": {
+    "installer-paths": {
+      "wordpress/wp-content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "wordpress/wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "wordpress/wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
     "branch-alias": {
       "dev-master": "0.1.x-dev"
     }
@@ -47,5 +71,10 @@
   "scripts": {
     "style:check": "phpcs",
     "style:fix": "phpcbf"
+  },
+  "autoload": {
+    "psr-4": {
+      "Itineris\\Site\\": "web/app/mu-plugins/site/"
+    }
   }
 }

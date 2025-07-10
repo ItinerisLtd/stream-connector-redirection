@@ -1,9 +1,11 @@
-# PackageTemplateWPMUPluginBasic
+# Stream Connector Redirection
 
-[![Packagist Version](https://img.shields.io/packagist/v/itinerisltd/package-template-wp-muplugin-basic.svg?label=release&style=flat-square)](https://packagist.org/packages/itinerisltd/package-template-wp-muplugin-basic)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/itinerisltd/package-template-wp-muplugin-basic.svg?style=flat-square)](https://packagist.org/packages/itinerisltd/package-template-wp-muplugin-basic)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/itinerisltd/package-template-wp-muplugin-basic.svg?label=packagist%20downloads&style=flat-square)](https://packagist.org/packages/itinerisltd/package-template-wp-muplugin-basic/stats)
-[![GitHub License](https://img.shields.io/github/license/itinerisltd/package-template-wp-muplugin-basic.svg?style=flat-square)](https://github.com/ItinerisLtd/package-template-wp-muplugin-basic/blob/master/LICENSE)
+Tracks redirect changes for the [Redirection](https://redirection.me/) [plugin](https://wordpress.org/plugins/redirection/)
+
+[![Packagist Version](https://img.shields.io/packagist/v/itinerisltd/stream-connector-redirection.svg?label=release&style=flat-square)](https://packagist.org/packages/itinerisltd/stream-connector-redirection)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/itinerisltd/stream-connector-redirection.svg?style=flat-square)](https://packagist.org/packages/itinerisltd/stream-connector-redirection)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/itinerisltd/stream-connector-redirection.svg?label=packagist%20downloads&style=flat-square)](https://packagist.org/packages/itinerisltd/stream-connector-redirection/stats)
+[![GitHub License](https://img.shields.io/github/license/itinerisltd/stream-connector-redirection.svg?style=flat-square)](https://github.com/ItinerisLtd/stream-connector-redirection/blob/master/LICENSE)
 [![Hire Itineris](https://img.shields.io/badge/Hire-Itineris-ff69b4.svg?style=flat-square)](https://www.itineris.co.uk/contact/)
 [![Twitter Follow @itineris_ltd](https://img.shields.io/twitter/follow/itineris_ltd?style=flat-square&color=1da1f2)](https://twitter.com/itineris_ltd)
 
@@ -25,15 +27,15 @@
 ## Installation
 
 ```bash
-composer require itinerisltd/package-template-wp-muplugin-basic
+composer require itinerisltd/stream-connector-redirection
 ```
 
 ## Credits
 
-[PackageTemplateWPMUPluginBasic](https://github.com/ItinerisLtd/package-template-wp-muplugin-basic) is a [Itineris Limited](https://www.itineris.co.uk/) project created by [Lee Hanbury-Pickett](https://github.com/codepuncher).
+[Connector](https://github.com/ItinerisLtd/stream-connector-redirection) is a [Itineris Limited](https://www.itineris.co.uk/) project created by [Lee Hanbury-Pickett](https://github.com/codepuncher).
 
-Full list of contributors can be found [here](https://github.com/ItinerisLtd/package-template-wp-muplugin-basic/graphs/contributors).
+Full list of contributors can be found [here](https://github.com/ItinerisLtd/stream-connector-redirection/graphs/contributors).
 
 ## License
 
-[PackageTemplateWPMUPluginBasic](https://github.com/ItinerisLtd/package-template-wp-muplugin-basic) is released under the [MIT License](https://opensource.org/licenses/MIT).
+[Connector](https://github.com/ItinerisLtd/stream-connector-redirection) is released under the [MIT License](https://opensource.org/licenses/MIT).
