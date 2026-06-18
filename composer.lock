@@ -9,39 +9,37 @@
     "packages-dev": [
         {
             "name": "composer/installers",
-            "version": "v1.12.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
+                "reference": "12fb2dfe5e16183de69e784a7b84046c43d97e8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
-                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "url": "https://api.github.com/repos/composer/installers/zipball/12fb2dfe5e16183de69e784a7b84046c43d97e8e",
+                "reference": "12fb2dfe5e16183de69e784a7b84046c43d97e8e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0"
-            },
-            "replace": {
-                "roundcube/plugin-installer": "*",
-                "shama/baton": "*"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
             },
             "require-dev": {
-                "composer/composer": "1.6.* || ^2.0",
-                "composer/semver": "^1 || ^3",
-                "phpstan/phpstan": "^0.12.55",
-                "phpstan/phpstan-phpunit": "^0.12.16",
-                "symfony/phpunit-bridge": "^4.2 || ^5",
-                "symfony/process": "^2.3"
+                "composer/composer": "^1.10.27 || ^2.7",
+                "composer/semver": "^1.7.2 || ^3.4.0",
+                "phpstan/phpstan": "^1.11",
+                "phpstan/phpstan-phpunit": "^1",
+                "symfony/phpunit-bridge": "^7.1.1",
+                "symfony/process": "^5 || ^6 || ^7"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-main": "1.x-dev"
-                }
+                    "dev-main": "2.x-dev"
+                },
+                "plugin-modifies-install-path": true
             },
             "autoload": {
                 "psr-4": {
@@ -62,7 +60,6 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "https://composer.github.io/installers/",
             "keywords": [
-                "Craft",
                 "Dolibarr",
                 "Eliasis",
                 "Hurad",
@@ -83,7 +80,6 @@
                 "Whmcs",
                 "WolfCMS",
                 "agl",
-                "aimeos",
                 "annotatecms",
                 "attogram",
                 "bitrix",
@@ -92,6 +88,7 @@
                 "cockpit",
                 "codeigniter",
                 "concrete5",
+                "concreteCMS",
                 "croogo",
                 "dokuwiki",
                 "drupal",
@@ -102,7 +99,6 @@
                 "grav",
                 "installer",
                 "itop",
-                "joomla",
                 "known",
                 "kohana",
                 "laravel",
@@ -111,6 +107,7 @@
                 "magento",
                 "majima",
                 "mako",
+                "matomo",
                 "mediawiki",
                 "miaoxing",
                 "modulework",
@@ -130,9 +127,7 @@
                 "silverstripe",
                 "sydes",
                 "sylius",
-                "symfony",
                 "tastyigniter",
-                "typo3",
                 "wordpress",
                 "yawik",
                 "zend",
@@ -140,7 +135,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v1.12.0"
+                "source": "https://github.com/composer/installers/tree/v2.3.0"
             },
             "funding": [
                 {
@@ -156,7 +151,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-13T08:19:44+00:00"
+            "time": "2024-06-24T20:46:46+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -808,20 +803,20 @@
         },
         {
             "name": "xwp/stream",
-            "version": "v4.1.2",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xwp/stream-dist.git",
-                "reference": "9b8146ff2fd6b53767bb28317a34f43c4e59050a"
+                "reference": "58b71399df4b1ad9644ecc0c33c0c46dfb25a588"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xwp/stream-dist/zipball/9b8146ff2fd6b53767bb28317a34f43c4e59050a",
-                "reference": "9b8146ff2fd6b53767bb28317a34f43c4e59050a",
+                "url": "https://api.github.com/repos/xwp/stream-dist/zipball/58b71399df4b1ad9644ecc0c33c0c46dfb25a588",
+                "reference": "58b71399df4b1ad9644ecc0c33c0c46dfb25a588",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0",
+                "composer/installers": "^1.0 || ^2.0",
                 "ext-json": "*",
                 "php": ">=7.2",
                 "woocommerce/action-scheduler": "^3.9"
@@ -829,26 +824,27 @@
             "require-dev": {
                 "automattic/vipwpcs": "^3.0",
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
-                "humanmade/mercator": "^1.0",
+                "humanmade/mercator": "dev-master as 1.1.0",
                 "johnbillion/query-monitor": "^3.16",
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpunit/phpunit": "^9.6",
                 "roots/wordpress": "^6.9",
+                "wordpress/mcp-adapter": "^0.5",
                 "wp-cli/wp-cli-bundle": "^2.6",
                 "wp-coding-standards/wpcs": "^3.1",
                 "wp-phpunit/wp-phpunit": "^6.9",
-                "wpackagist-plugin/advanced-custom-fields": "6.7.0",
-                "wpackagist-plugin/buddypress": "14.4.0",
-                "wpackagist-plugin/classic-editor": "1.6.7",
-                "wpackagist-plugin/easy-digital-downloads": "3.6.5",
-                "wpackagist-plugin/jetpack": "15.5",
-                "wpackagist-plugin/two-factor": "0.11.0",
-                "wpackagist-plugin/user-switching": "1.11.1",
-                "wpackagist-plugin/wordpress-seo": "27.0",
-                "wpackagist-plugin/wp-crontrol": "1.21.0",
-                "wpackagist-theme/twentytwentythree": "^1.0",
+                "wp-plugin/advanced-custom-fields": "6.7.0",
+                "wp-plugin/buddypress": "14.4.0",
+                "wp-plugin/classic-editor": "1.6.7",
+                "wp-plugin/easy-digital-downloads": "3.6.5",
+                "wp-plugin/jetpack": "15.5",
+                "wp-plugin/two-factor": "0.11.0",
+                "wp-plugin/user-switching": "1.11.1",
+                "wp-plugin/wordpress-seo": "27.0",
+                "wp-plugin/wp-crontrol": "1.21.0",
+                "wp-theme/twentytwentythree": "^1.0",
                 "xwp/wait-for": "^0.0.1",
                 "yoast/phpunit-polyfills": "^1.1"
             },
@@ -877,9 +873,9 @@
             "description": "Track WordPress user and system actions for debugging, logging and compliance purposes",
             "homepage": "https://wordpress.org/plugins/stream/",
             "support": {
-                "source": "https://github.com/xwp/stream-dist/tree/v4.1.2"
+                "source": "https://github.com/xwp/stream-dist/tree/v4.2.0"
             },
-            "time": "2026-02-24T12:45:15+00:00"
+            "time": "2026-05-28T12:13:18+00:00"
         }
     ],
     "aliases": [],
