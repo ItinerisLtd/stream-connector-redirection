@@ -803,16 +803,16 @@
         },
         {
             "name": "xwp/stream",
-            "version": "v4.2.0",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xwp/stream-dist.git",
-                "reference": "58b71399df4b1ad9644ecc0c33c0c46dfb25a588"
+                "reference": "ec29de37b2b7342c09eb9db21e81e6429558385e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xwp/stream-dist/zipball/58b71399df4b1ad9644ecc0c33c0c46dfb25a588",
-                "reference": "58b71399df4b1ad9644ecc0c33c0c46dfb25a588",
+                "url": "https://api.github.com/repos/xwp/stream-dist/zipball/ec29de37b2b7342c09eb9db21e81e6429558385e",
+                "reference": "ec29de37b2b7342c09eb9db21e81e6429558385e",
                 "shasum": ""
             },
             "require": {
@@ -873,9 +873,9 @@
             "description": "Track WordPress user and system actions for debugging, logging and compliance purposes",
             "homepage": "https://wordpress.org/plugins/stream/",
             "support": {
-                "source": "https://github.com/xwp/stream-dist/tree/v4.2.0"
+                "source": "https://github.com/xwp/stream-dist/tree/v4.2.1"
             },
-            "time": "2026-05-28T12:13:18+00:00"
+            "time": "2026-07-02T11:03:32+00:00"
         }
     ],
     "aliases": [],
