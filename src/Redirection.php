@@ -44,16 +44,19 @@ class Redirection extends Connector {
 
         $from = $item->get_url();
         $to = $item->get_action_data();
-        $message = sprintf(
-            __('Redirect %s -> %s %s', 'stream-connector-redirection'),
-            $from,
-            $to,
-            $action,
+        $message = __('Redirect %1$s -> %2$s %3$s', 'stream-connector-redirection');
+        $args = array_merge(
+            [
+                'from' => $from,
+                'to' => $to,
+                'status' => $action,
+            ],
+            $this->get_redirect_data($item),
         );
 
         $this->log(
             $message,
-            $this->get_redirect_data($item),
+            $args,
             $item->get_id(),
             'Redirects',
             $action,
@@ -64,14 +67,18 @@ class Redirection extends Connector {
     {
         $from = $item->get_url();
         $to = $item->get_action_data();
-        $message = sprintf(
-            __('Redirect %s -> %s deleted', 'stream-connector-redirection'),
-            $from,
-            $to,
+        $message = __('Redirect %1$s -> %2$s deleted', 'stream-connector-redirection');
+        $args = array_merge(
+            [
+                'from' => $from,
+                'to' => $to,
+            ],
+            $this->get_redirect_data($item),
         );
+
         $this->log(
             $message,
-            $this->get_redirect_data($item),
+            $args,
             $item->get_id(),
             'Redirects',
             'deleted',
