@@ -8,12 +8,17 @@ use Red_Item;
 use WP_Stream\Connector;
 
 class Redirection extends Connector {
-    public $name = 'redirection';
-
-    public $actions = [
-        'redirection_redirect_deleted',
-        'redirection_redirect_updated',
-    ];
+    /**
+     * Set here, not redeclared: Stream 4.5 typed these properties, 4.4 did not.
+     */
+    public function __construct()
+    {
+        $this->name = 'redirection';
+        $this->actions = [
+            'redirection_redirect_deleted',
+            'redirection_redirect_updated',
+        ];
+    }
 
     public function get_label(): string
     {
